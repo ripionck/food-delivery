@@ -1,6 +1,5 @@
 import AllCuisines from "./AllCuisines";
 import CheckoutForm from "./CheckoutForm";
-import HelpSupport from "./HelpSupport";
 import OrderDetails from "./OrderDetails";
 import OrderHistory from "./OrderHistory";
 import OrderTracking from "./OrderTracking";
@@ -18,7 +17,6 @@ function App() {
     <div>
       <Home />
       <AllCuisines />
-      <HelpSupport />
       <PopularRestaurants />
       <UserDashboard />
       <OrderHistory />

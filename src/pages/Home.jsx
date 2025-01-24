@@ -3,6 +3,7 @@ import CustomerReviews from "../components/customerReviews/CustomerReviews";
 import FeaturedRestaurants from "../components/featuredRestaurants/FeaturedRestaurants";
 import FoodDelivery from "../components/foodDelivery/FoodDelivery";
 import FoodDiscovery from "../components/foodDiscovery/FoodDiscovery";
+import HelpSupport from "../components/helpSupport/HelpSupport";
 import HowItWorks from "../components/howItWorks/HowItWorks";
 import Footer from "../components/layouts/Footer";
 import Header from "../components/layouts/Header";
@@ -30,6 +31,7 @@ function Home() {
       <HowItWorks />
       <CustomerReviews />
       <AppDownload />
+      <HelpSupport />
       <Footer />
     </div>
   );
