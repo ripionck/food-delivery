@@ -3,6 +3,7 @@ import FoodDelivery from "../components/foodDelivery/FoodDelivery";
 import FoodDiscovery from "../components/foodDiscovery/FoodDiscovery";
 import Footer from "../components/layouts/Footer";
 import Header from "../components/layouts/Header";
+import PopularCuisines from "../components/popularCuisines/PopularCuisines";
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
       <FoodDiscovery />
       <FoodDelivery />
       <FeaturedRestaurants />
+      <PopularCuisines />
       <Footer />
     </div>
   );

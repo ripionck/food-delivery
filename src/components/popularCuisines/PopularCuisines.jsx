@@ -4,8 +4,9 @@ import {
   BeefIcon as Burger,
   CherryIcon as ChiliHot,
   Cookie,
+  ArrowRight,
 } from "lucide-react";
-import { ArrowRight } from "lucide-react";
+import CuisineCard from "./CuisineCard";
 
 function PopularCuisines() {
   const cuisines = [
@@ -52,16 +53,7 @@ function PopularCuisines() {
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {cuisines.map((cuisine) => (
-          <div
-            key={cuisine.name}
-            className="bg-[#FFF8F3] rounded-2xl p-6 flex flex-col items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
-          >
-            <div className="w-16 h-16 rounded-full bg-[#FFF0E6] flex items-center justify-center mb-4">
-              <cuisine.icon className="w-8 h-8 text-[#FF642F]" />
-            </div>
-            <h3 className="font-medium text-gray-900 mb-1">{cuisine.name}</h3>
-            <p className="text-sm text-gray-500">{cuisine.dishes}</p>
-          </div>
+          <CuisineCard key={cuisine.name} cuisine={cuisine} />
         ))}
       </div>
 

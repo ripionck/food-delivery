@@ -10,7 +10,6 @@ import OrderHistory from "./OrderHistory";
 import OrderTracking from "./OrderTracking";
 import Home from "./pages/Home";
 import PaymentForm from "./PaymentForm";
-import PopularCuisines from "./PopularCuisines";
 import PopularRestaurants from "./PopularRestaurants";
 import ProfileSettings from "./ProfileSettings";
 import RestaurantDashboard from "./RestaurantDashboard";
@@ -22,7 +21,6 @@ function App() {
   return (
     <div>
       <Home />
-      <PopularCuisines />
       <AllCuisines />
       <HowItWorks />
       <CustomerReviews />
