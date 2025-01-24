@@ -1,8 +1,6 @@
 import AllCuisines from "./AllCuisines";
 import AppDownload from "./AppDownload";
 import CheckoutForm from "./CheckoutForm";
-import CustomerReviews from "./CustomerReviews";
-import Footer from "./components/layouts/Footer";
 import HelpSupport from "./HelpSupport";
 import OrderDetails from "./OrderDetails";
 import OrderHistory from "./OrderHistory";
@@ -21,10 +19,8 @@ function App() {
     <div>
       <Home />
       <AllCuisines />
-      <CustomerReviews />
       <AppDownload />
       <HelpSupport />
-      <Footer />
       <PopularRestaurants />
       <UserDashboard />
       <OrderHistory />

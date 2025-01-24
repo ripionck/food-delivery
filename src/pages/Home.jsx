@@ -1,3 +1,4 @@
+import CustomerReviews from "../components/customerReviews/CustomerReviews";
 import FeaturedRestaurants from "../components/featuredRestaurants/FeaturedRestaurants";
 import FoodDelivery from "../components/foodDelivery/FoodDelivery";
 import FoodDiscovery from "../components/foodDiscovery/FoodDiscovery";
@@ -26,6 +27,7 @@ function Home() {
       <FeaturedRestaurants />
       <PopularCuisines />
       <HowItWorks />
+      <CustomerReviews />
       <Footer />
     </div>
   );
