@@ -1,71 +1,70 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { Home, History, Heart, Settings, HelpCircle } from "lucide-react";
+import { MapPin, CreditCard, Heart, Bell } from "lucide-react";
 
 function Navigation({ onSelect }) {
-  const [activeButton, setActiveButton] = useState("dashboard");
+  const [activeLink, setActiveLink] = useState("profile");
 
-  const handleButtonClick = (button) => {
-    setActiveButton(button);
-    onSelect(button);
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    onSelect(link);
   };
 
   return (
-    <nav className="space-y-2">
+    <nav className="space-y-1">
       <button
-        onClick={() => handleButtonClick("dashboard")}
+        onClick={() => handleLinkClick("profile")}
         className={`flex items-center gap-3 px-4 py-3 rounded-lg ${
-          activeButton === "dashboard"
+          activeLink === "profile"
             ? "text-orange-500 bg-orange-50"
             : "text-gray-700 hover:bg-gray-50"
         }`}
       >
-        <Home size={20} />
-        <span>Dashboard</span>
+        <span>Profile Details</span>
       </button>
       <button
-        onClick={() => handleButtonClick("orderHistory")}
+        onClick={() => handleLinkClick("addresses")}
         className={`flex items-center gap-3 px-4 py-3 rounded-lg ${
-          activeButton === "orderHistory"
+          activeLink === "addresses"
             ? "text-orange-500 bg-orange-50"
             : "text-gray-700 hover:bg-gray-50"
         }`}
       >
-        <History size={20} />
-        <span>Order History</span>
+        <MapPin className="w-5 h-5" />
+        <span>Addresses</span>
       </button>
       <button
-        onClick={() => handleButtonClick("favorites")}
+        onClick={() => handleLinkClick("paymentMethods")}
         className={`flex items-center gap-3 px-4 py-3 rounded-lg ${
-          activeButton === "favorites"
+          activeLink === "paymentMethods"
             ? "text-orange-500 bg-orange-50"
             : "text-gray-700 hover:bg-gray-50"
         }`}
       >
-        <Heart size={20} />
+        <CreditCard className="w-5 h-5" />
+        <span>Payment Methods</span>
+      </button>
+      <button
+        onClick={() => handleLinkClick("favorites")}
+        className={`flex items-center gap-3 px-4 py-3 rounded-lg ${
+          activeLink === "favorites"
+            ? "text-orange-500 bg-orange-50"
+            : "text-gray-700 hover:bg-gray-50"
+        }`}
+      >
+        <Heart className="w-5 h-5" />
         <span>Favorites</span>
       </button>
       <button
-        onClick={() => handleButtonClick("settings")}
+        onClick={() => handleLinkClick("notifications")}
         className={`flex items-center gap-3 px-4 py-3 rounded-lg ${
-          activeButton === "settings"
+          activeLink === "notifications"
             ? "text-orange-500 bg-orange-50"
             : "text-gray-700 hover:bg-gray-50"
         }`}
       >
-        <Settings size={20} />
-        <span>Settings</span>
-      </button>
-      <button
-        onClick={() => handleButtonClick("support")}
-        className={`flex items-center gap-3 px-4 py-3 rounded-lg ${
-          activeButton === "support"
-            ? "text-orange-500 bg-orange-50"
-            : "text-gray-700 hover:bg-gray-50"
-        }`}
-      >
-        <HelpCircle size={20} />
-        <span>Support</span>
+        <Bell className="w-5 h-5" />
+        <span>Notifications</span>
       </button>
     </nav>
   );

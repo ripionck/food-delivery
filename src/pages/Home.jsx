@@ -10,11 +10,8 @@ import Footer from "../components/layouts/Footer";
 import Header from "../components/layouts/Header";
 import PopularCuisines from "../components/popularCuisines/PopularCuisines";
 import OrderDetails from "../OrderDetails";
-import OrderHistory from "./userDashboard/OrderHistory";
-import ProfileSettings from "../ProfileSettings";
 import RestaurantDashboard from "../RestaurantDashboard";
 import SavedItems from "../Saveditems";
-import UserDashboard from "./userDashboard/UserDashboard";
 import CheckoutForm from "../CheckoutForm";
 import PaymentForm from "../PaymentForm";
 
@@ -43,11 +40,8 @@ function Home() {
       <HelpSupport />
       <Footer />
       <div>
-        <UserDashboard />
-        <OrderHistory />
         <SavedItems />
         <OrderDetails />
-        <ProfileSettings />
         <RestaurantDashboard />
         <ShoppingCart />
         <CheckoutForm />
