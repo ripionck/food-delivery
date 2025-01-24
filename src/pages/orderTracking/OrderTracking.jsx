@@ -5,7 +5,7 @@ import DeliveryPartner from "./DeliveryPartner";
 import DeliveryLocation from "./DeliveryLocation";
 import ActionButtons from "./ActionButtons";
 
-function TrackOrder() {
+function OrderTracking() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       <div className="w-full max-w-3xl space-y-6">
@@ -68,4 +68,4 @@ function TrackOrder() {
   );
 }
 
-export default TrackOrder;
+export default OrderTracking;
