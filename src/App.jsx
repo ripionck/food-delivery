@@ -5,7 +5,6 @@ import CustomerReviews from "./CustomerReviews";
 import Footer from "./Footer";
 import HelpSupport from "./HelpSupport";
 import HowItWorks from "./HowItWorks";
-import Landing from "./Landing";
 import OrderDetails from "./OrderDetails";
 import OrderHistory from "./OrderHistory";
 import OrderTracking from "./OrderTracking";
@@ -23,7 +22,6 @@ function App() {
   return (
     <div>
       <Home />
-      <Landing />
       <PopularCuisines />
       <AllCuisines />
       <HowItWorks />

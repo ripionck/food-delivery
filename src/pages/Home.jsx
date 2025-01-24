@@ -1,3 +1,5 @@
+import FeaturedRestaurants from "../components/featuredRestaurants/FeaturedRestaurants";
+import FoodDelivery from "../components/foodDelivery/FoodDelivery";
 import FoodDiscovery from "../components/foodDiscovery/FoodDiscovery";
 import Header from "../components/layouts/Header";
 
@@ -17,6 +19,8 @@ function Home() {
 
       <Header />
       <FoodDiscovery />
+      <FoodDelivery />
+      <FeaturedRestaurants />
     </div>
   );
 }
