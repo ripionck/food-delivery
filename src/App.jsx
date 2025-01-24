@@ -4,12 +4,12 @@ import CheckoutForm from "./CheckoutForm";
 import CustomerReviews from "./CustomerReviews";
 import Footer from "./Footer";
 import HelpSupport from "./HelpSupport";
-import Home from "./Home";
 import HowItWorks from "./HowItWorks";
 import Landing from "./Landing";
 import OrderDetails from "./OrderDetails";
 import OrderHistory from "./OrderHistory";
 import OrderTracking from "./OrderTracking";
+import Home from "./pages/Home";
 import PaymentForm from "./PaymentForm";
 import PopularCuisines from "./PopularCuisines";
 import PopularRestaurants from "./PopularRestaurants";
@@ -47,3 +47,19 @@ function App() {
 }
 
 export default App;
+
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// const App = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/blog/:slug" element={<Blog />} />
+//         <Route path="/profile" element={<ProfilePage />} />
+//       </Routes>
+//     </Router>
+//   );
+// };
+
+// export default App;
