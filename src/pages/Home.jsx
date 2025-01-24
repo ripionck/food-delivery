@@ -8,9 +8,6 @@ import HowItWorks from "../components/howItWorks/HowItWorks";
 import Footer from "../components/layouts/Footer";
 import Header from "../components/layouts/Header";
 import PopularCuisines from "../components/popularCuisines/PopularCuisines";
-import SavedItems from "../Saveditems";
-import CheckoutForm from "../CheckoutForm";
-import PaymentForm from "../PaymentForm";
 
 function Home() {
   return (
@@ -36,11 +33,6 @@ function Home() {
       <AppDownload />
       <HelpSupport />
       <Footer />
-      <div>
-        <SavedItems />
-        <CheckoutForm />
-        <PaymentForm />
-      </div>
     </div>
   );
 }

@@ -1,47 +1,16 @@
 import { useState } from "react";
+import ProgressBar from "./ProgressBar"; // Adjust the import path as needed
+import { Link } from "react-router-dom";
 
-function CheckoutForm() {
+function DeliveryForm() {
+  const [currentStep, setCurrentStep] = useState(2);
   const [deliveryTime, setDeliveryTime] = useState("now");
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Progress Steps */}
-        <div className="flex justify-center mb-8">
-          <div className="flex items-center gap-4">
-            <div className="flex items-center">
-              <div className="w-8 h-8 rounded-full bg-orange-500 text-white flex items-center justify-center text-sm font-medium">
-                1
-              </div>
-              <div className="ml-2">
-                <span className="text-sm font-medium text-orange-500">
-                  Delivery
-                </span>
-              </div>
-            </div>
-            <div className="w-24 h-px bg-orange-500"></div>
-            <div className="flex items-center">
-              <div className="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center text-sm font-medium">
-                2
-              </div>
-              <div className="ml-2">
-                <span className="text-sm font-medium text-gray-600">
-                  Payment
-                </span>
-              </div>
-            </div>
-            <div className="w-24 h-px bg-gray-200"></div>
-            <div className="flex items-center">
-              <div className="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center text-sm font-medium">
-                3
-              </div>
-              <div className="ml-2">
-                <span className="text-sm font-medium text-gray-600">
-                  Confirmation
-                </span>
-              </div>
-            </div>
-          </div>
+        <div className="max-w-2xl mx-auto">
+          <ProgressBar currentStep={currentStep} />
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8">
@@ -49,7 +18,6 @@ function CheckoutForm() {
           <div className="flex-1">
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <h2 className="text-xl font-semibold mb-6">Delivery Address</h2>
-
               <form className="space-y-6">
                 {/* Name Fields */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -82,7 +50,6 @@ function CheckoutForm() {
                     />
                   </div>
                 </div>
-
                 {/* Street Address */}
                 <div>
                   <label
@@ -98,7 +65,6 @@ function CheckoutForm() {
                     required
                   />
                 </div>
-
                 {/* Phone and Instructions */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
@@ -129,7 +95,6 @@ function CheckoutForm() {
                     />
                   </div>
                 </div>
-
                 {/* Delivery Time */}
                 <div className="mt-8">
                   <h3 className="text-lg font-semibold mb-4">Delivery Time</h3>
@@ -175,7 +140,6 @@ function CheckoutForm() {
               </form>
             </div>
           </div>
-
           {/* Order Summary */}
           <div className="lg:w-96">
             <div className="bg-white rounded-xl p-6 shadow-sm">
@@ -207,10 +171,11 @@ function CheckoutForm() {
                   <span className="font-semibold">Total</span>
                   <span className="font-semibold">$37.50</span>
                 </div>
-
-                <button className="w-full px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">
-                  Continue to Payment
-                </button>
+                <Link to="/payment">
+                  <button className="w-full px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">
+                    Continue to Payment
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -220,4 +185,4 @@ function CheckoutForm() {
   );
 }
 
-export default CheckoutForm;
+export default DeliveryForm;

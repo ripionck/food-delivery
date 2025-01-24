@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { Lock } from "lucide-react";
+import ProgressBar from "./ProgressBar";
+import { Link } from "react-router-dom";
 
 function PaymentForm() {
+  const [currentStep, setCurrentStep] = useState(3);
   const [paymentMethod, setPaymentMethod] = useState("card");
-  const [code, setCode] = useState(["", "", "", ""]);
-
+  const [code, setCode] = useState([""]);
   const handleCodeChange = (index, value) => {
     if (value.length <= 1) {
       const newCode = [...code];
       newCode[index] = value;
       setCode(newCode);
-
-      // Auto-focus next input
       if (value && index < 3) {
         const nextInput = document.getElementById(`code-${index + 1}`);
         nextInput?.focus();
@@ -21,6 +21,9 @@ function PaymentForm() {
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
+      <div className="max-w-2xl mx-auto">
+        <ProgressBar currentStep={currentStep} />
+      </div>
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Payment Form */}
@@ -67,7 +70,6 @@ function PaymentForm() {
                   </label>
                 </div>
               </div>
-
               {/* Card Details */}
               {paymentMethod === "card" && (
                 <div>
@@ -137,7 +139,6 @@ function PaymentForm() {
                   </div>
                 </div>
               )}
-
               {/* Two-Factor Authentication */}
               <div className="mt-8">
                 <div className="flex justify-between items-center mb-4">
@@ -170,7 +171,6 @@ function PaymentForm() {
               </div>
             </div>
           </div>
-
           {/* Payment Summary */}
           <div className="lg:w-96">
             <div className="bg-white rounded-xl p-6 shadow-sm">
@@ -189,11 +189,12 @@ function PaymentForm() {
                   <span className="font-semibold">Total to Pay</span>
                   <span className="font-semibold">$38.50</span>
                 </div>
+                <Link to="/confirmation">
+                  <button className="w-full px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors flex items-center justify-center gap-2">
+                    <Lock className="w-4 h-4" /> Pay Securely
+                  </button>
+                </Link>
 
-                <button className="w-full px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors flex items-center justify-center gap-2">
-                  <Lock className="w-4 h-4" />
-                  Pay Securely
-                </button>
                 <p className="text-center text-sm text-gray-500">
                   Your payment is secured with SSL encryption
                 </p>
@@ -205,5 +206,4 @@ function PaymentForm() {
     </div>
   );
 }
-
 export default PaymentForm;

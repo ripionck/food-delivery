@@ -1,6 +1,12 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { Home, History, Heart, Settings, HelpCircle } from "lucide-react";
+import {
+  LayoutDashboard,
+  History,
+  Bookmark,
+  Settings,
+  HelpCircle,
+} from "lucide-react";
 
 function Navigation({ onSelect }) {
   const [activeButton, setActiveButton] = useState("dashboard");
@@ -20,7 +26,7 @@ function Navigation({ onSelect }) {
             : "text-gray-700 hover:bg-gray-50"
         }`}
       >
-        <Home size={20} />
+        <LayoutDashboard size={20} />
         <span>Dashboard</span>
       </button>
       <button
@@ -32,18 +38,18 @@ function Navigation({ onSelect }) {
         }`}
       >
         <History size={20} />
-        <span>Order History</span>
+        <span>Orders</span>
       </button>
       <button
-        onClick={() => handleButtonClick("favorites")}
+        onClick={() => handleButtonClick("saved")}
         className={`flex items-center gap-3 px-4 py-3 rounded-lg ${
-          activeButton === "favorites"
+          activeButton === "saved"
             ? "text-orange-500 bg-orange-50"
             : "text-gray-700 hover:bg-gray-50"
         }`}
       >
-        <Heart size={20} />
-        <span>Favorites</span>
+        <Bookmark size={20} />
+        <span>Saved</span>
       </button>
       <button
         onClick={() => handleButtonClick("settings")}

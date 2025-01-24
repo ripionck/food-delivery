@@ -5,6 +5,7 @@ import StatsCard from "./dashboard/StatsCard";
 import RecentOrderItem from "./dashboard/RecentOrderItem";
 import { ShoppingBag, Star, MapPin } from "lucide-react";
 import OrderHistory from "./OrderHistory";
+import SavedItems from "../../Saveditems";
 
 function UserDashboard() {
   const [selectedContent, setSelectedContent] = useState("dashboard");
@@ -69,8 +70,8 @@ function UserDashboard() {
         );
       case "orderHistory":
         return <OrderHistory />;
-      case "favorites":
-        return <div>Favorites Content</div>;
+      case "saved":
+        return <SavedItems />;
       case "settings":
         return <div>Settings Content</div>;
       case "support":

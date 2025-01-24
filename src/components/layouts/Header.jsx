@@ -55,11 +55,11 @@ function Header() {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
             </div>
             <Link to="/cart">
-              <ShoppingCart className="w-5 h-5 text-gray-500" />
+              <ShoppingCart className="w-5 h-5 text-gray-700" />
             </Link>
             <div className="relative">
               <button onClick={toggleProfileMenu}>
-                <User className="w-5 h-5 text-gray-500" />
+                <User className="w-5 h-5 text-gray-700" />
               </button>
               {isProfileOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
