@@ -1,51 +1,20 @@
-import AllCuisines from "./AllCuisines";
-import CheckoutForm from "./CheckoutForm";
-import OrderDetails from "./OrderDetails";
-import OrderHistory from "./OrderHistory";
-import OrderTracking from "./OrderTracking";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import PaymentForm from "./PaymentForm";
-import PopularRestaurants from "./PopularRestaurants";
-import ProfileSettings from "./ProfileSettings";
-import RestaurantDashboard from "./RestaurantDashboard";
-import SavedItems from "./Saveditems";
-import ShoppingCart from "./ShoppingCart";
-import UserDashboard from "./UserDashboard";
+import Restaurants from "./pages/restaurants/Restaurants";
+import Cuisines from "./pages/cuisines/Cuisines";
+import TrackOrder from "./pages/trackOrder/TrackOrder";
 
 function App() {
   return (
-    <div>
-      <Home />
-      <AllCuisines />
-      <PopularRestaurants />
-      <UserDashboard />
-      <OrderHistory />
-      <SavedItems />
-      <OrderDetails />
-      <ProfileSettings />
-      <RestaurantDashboard />
-      <OrderTracking />
-      <ShoppingCart />
-      <CheckoutForm />
-      <PaymentForm />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/restaurants" element={<Restaurants />} />
+        <Route path="/cuisines" element={<Cuisines />} />
+        <Route path="/track-order" element={<TrackOrder />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
-
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/blog/:slug" element={<Blog />} />
-//         <Route path="/profile" element={<ProfilePage />} />
-//       </Routes>
-//     </Router>
-//   );
-// };
-
-// export default App;

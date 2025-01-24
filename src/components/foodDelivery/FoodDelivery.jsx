@@ -6,7 +6,7 @@ function FoodDelivery() {
   const [address, setAddress] = useState("");
 
   return (
-    <div className="min-h-screen bg-[#FDF8F4] px-4 sm:px-6 lg:px-8">
+    <div className="max-h-3xl bg-[#FDF8F4] px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto pt-20 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <HeroSection address={address} setAddress={setAddress} />

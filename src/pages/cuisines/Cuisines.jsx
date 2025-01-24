@@ -7,7 +7,7 @@ import {
   Cookie,
 } from "lucide-react";
 
-function AllCuisines() {
+function Cuisines() {
   const cuisines = [
     { name: "Italian", dishes: "150+ dishes", icon: Pizza },
     { name: "Asian", dishes: "200+ dishes", icon: Bowl },
@@ -64,4 +64,4 @@ function AllCuisines() {
   );
 }
 
-export default AllCuisines;
+export default Cuisines;

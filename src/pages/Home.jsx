@@ -1,3 +1,4 @@
+import { ShoppingCart } from "lucide-react";
 import AppDownload from "../components/appDownload/AppDownload";
 import CustomerReviews from "../components/customerReviews/CustomerReviews";
 import FeaturedRestaurants from "../components/featuredRestaurants/FeaturedRestaurants";
@@ -8,6 +9,14 @@ import HowItWorks from "../components/howItWorks/HowItWorks";
 import Footer from "../components/layouts/Footer";
 import Header from "../components/layouts/Header";
 import PopularCuisines from "../components/popularCuisines/PopularCuisines";
+import OrderDetails from "../OrderDetails";
+import OrderHistory from "../OrderHistory";
+import ProfileSettings from "../ProfileSettings";
+import RestaurantDashboard from "../RestaurantDashboard";
+import SavedItems from "../Saveditems";
+import UserDashboard from "../UserDashboard";
+import CheckoutForm from "../CheckoutForm";
+import PaymentForm from "../PaymentForm";
 
 function Home() {
   return (
@@ -33,6 +42,17 @@ function Home() {
       <AppDownload />
       <HelpSupport />
       <Footer />
+      <div>
+        <UserDashboard />
+        <OrderHistory />
+        <SavedItems />
+        <OrderDetails />
+        <ProfileSettings />
+        <RestaurantDashboard />
+        <ShoppingCart />
+        <CheckoutForm />
+        <PaymentForm />
+      </div>
     </div>
   );
 }

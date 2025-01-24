@@ -1,4 +1,5 @@
 import { Search, ShoppingCart, User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -11,18 +12,24 @@ function Header() {
             </span>
           </div>
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-gray-700 hover:text-gray-900">
+            <Link to="/" className="text-gray-700 hover:text-gray-900">
               Home
-            </a>
-            <a href="#" className="text-gray-700 hover:text-gray-900">
+            </Link>
+            <Link
+              to="/restaurants"
+              className="text-gray-700 hover:text-gray-900"
+            >
               Restaurants
-            </a>
-            <a href="#" className="text-gray-700 hover:text-gray-900">
+            </Link>
+            <Link to="/cuisines" className="text-gray-700 hover:text-gray-900">
               Cuisines
-            </a>
-            <a href="#" className="text-gray-700 hover:text-gray-900">
+            </Link>
+            <Link
+              to="/track-order"
+              className="text-gray-700 hover:text-gray-900"
+            >
               Track Order
-            </a>
+            </Link>
           </nav>
           <div className="flex items-center space-x-4">
             <Search className="w-5 h-5 text-gray-500" />

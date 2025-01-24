@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function PopularRestaurants() {
+function Restaurants() {
   const [selectedCuisine, setSelectedCuisine] = useState("All Cuisines");
 
   const cuisines = [
@@ -132,4 +132,4 @@ function PopularRestaurants() {
   );
 }
 
-export default PopularRestaurants;
+export default Restaurants;
