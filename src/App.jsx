@@ -1,5 +1,4 @@
 import AllCuisines from "./AllCuisines";
-import AppDownload from "./AppDownload";
 import CheckoutForm from "./CheckoutForm";
 import HelpSupport from "./HelpSupport";
 import OrderDetails from "./OrderDetails";
@@ -19,7 +18,6 @@ function App() {
     <div>
       <Home />
       <AllCuisines />
-      <AppDownload />
       <HelpSupport />
       <PopularRestaurants />
       <UserDashboard />

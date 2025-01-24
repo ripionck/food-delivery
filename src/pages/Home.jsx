@@ -1,3 +1,4 @@
+import AppDownload from "../components/appDownload/AppDownload";
 import CustomerReviews from "../components/customerReviews/CustomerReviews";
 import FeaturedRestaurants from "../components/featuredRestaurants/FeaturedRestaurants";
 import FoodDelivery from "../components/foodDelivery/FoodDelivery";
@@ -28,6 +29,7 @@ function Home() {
       <PopularCuisines />
       <HowItWorks />
       <CustomerReviews />
+      <AppDownload />
       <Footer />
     </div>
   );
