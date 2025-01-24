@@ -1,4 +1,3 @@
-import { ShoppingCart } from "lucide-react";
 import AppDownload from "../components/appDownload/AppDownload";
 import CustomerReviews from "../components/customerReviews/CustomerReviews";
 import FeaturedRestaurants from "../components/featuredRestaurants/FeaturedRestaurants";
@@ -9,7 +8,6 @@ import HowItWorks from "../components/howItWorks/HowItWorks";
 import Footer from "../components/layouts/Footer";
 import Header from "../components/layouts/Header";
 import PopularCuisines from "../components/popularCuisines/PopularCuisines";
-import OrderDetails from "./restaurantDashboard/OrderDetails";
 import SavedItems from "../Saveditems";
 import CheckoutForm from "../CheckoutForm";
 import PaymentForm from "../PaymentForm";
@@ -40,8 +38,6 @@ function Home() {
       <Footer />
       <div>
         <SavedItems />
-        <OrderDetails />
-        <ShoppingCart />
         <CheckoutForm />
         <PaymentForm />
       </div>
