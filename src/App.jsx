@@ -4,7 +4,6 @@ import CheckoutForm from "./CheckoutForm";
 import CustomerReviews from "./CustomerReviews";
 import Footer from "./components/layouts/Footer";
 import HelpSupport from "./HelpSupport";
-import HowItWorks from "./HowItWorks";
 import OrderDetails from "./OrderDetails";
 import OrderHistory from "./OrderHistory";
 import OrderTracking from "./OrderTracking";
@@ -22,7 +21,6 @@ function App() {
     <div>
       <Home />
       <AllCuisines />
-      <HowItWorks />
       <CustomerReviews />
       <AppDownload />
       <HelpSupport />

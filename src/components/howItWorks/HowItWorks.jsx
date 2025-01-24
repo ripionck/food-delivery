@@ -1,4 +1,5 @@
 import { MapPin, Utensils, CreditCard, Bike, ArrowRight } from "lucide-react";
+import StepCard from "./StepCard";
 
 function HowItWorks() {
   const steps = [
@@ -32,23 +33,8 @@ function HowItWorks() {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {steps.map((step, index) => (
-          <div
-            key={step.title}
-            className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"
-          >
-            <div className="flex flex-col items-center text-center">
-              <div className="w-20 h-20 rounded-full bg-[#FFF0E6] flex items-center justify-center mb-6">
-                <step.icon className="w-8 h-8 text-[#FF642F]" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                {step.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {step.description}
-              </p>
-            </div>
-          </div>
+        {steps.map((step) => (
+          <StepCard key={step.title} step={step} />
         ))}
       </div>
 
