@@ -78,6 +78,13 @@ function Header() {
                     Dashboard
                   </Link>
                   <Link
+                    to="/restaurant-dashboard"
+                    className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >
+                    <LayoutDashboard className="w-4 h-4 mr-2" />
+                    Dashboard
+                  </Link>
+                  <Link
                     to="/logout"
                     className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >

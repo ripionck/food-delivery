@@ -5,6 +5,7 @@ import Cuisines from "./pages/cuisines/Cuisines";
 import OrderTracking from "./pages/orderTracking/OrderTracking";
 import UserDashboard from "./pages/userDashboard/UserDashboard";
 import Account from "./pages/account/Account";
+import RestaurantDashboard from "./pages/restaurantDashboard/RestaurantDashboard";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/cuisines" element={<Cuisines />} />
         <Route path="/track-order" element={<OrderTracking />} />
         <Route path="/user-dashboard" element={<UserDashboard />} />
+        <Route path="/restaurant-dashboard" element={<RestaurantDashboard />} />
         <Route path="/account" element={<Account />} />
       </Routes>
     </Router>
