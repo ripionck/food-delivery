@@ -2,7 +2,7 @@ import AllCuisines from "./AllCuisines";
 import AppDownload from "./AppDownload";
 import CheckoutForm from "./CheckoutForm";
 import CustomerReviews from "./CustomerReviews";
-import Footer from "./Footer";
+import Footer from "./components/layouts/Footer";
 import HelpSupport from "./HelpSupport";
 import HowItWorks from "./HowItWorks";
 import OrderDetails from "./OrderDetails";
