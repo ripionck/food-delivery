@@ -1,11 +1,7 @@
 import PropTypes from "prop-types";
 
 function Main({ children }) {
-  return (
-    <main className="flex-1 bg-gray-100 pt-2">
-      <div className="max-w-7xl mx-auto">{children}</div>
-    </main>
-  );
+  return <main className="flex-1bg-gray-100 pt-2">{children}</main>;
 }
 
 Main.propTypes = {

@@ -4,8 +4,8 @@ import SearchBar from "./history/SearchBar";
 
 function OrderHistory() {
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
-      <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-sm p-6">
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-7xl mx-auto bg-white rounded-xl shadow-sm p-6">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
           <h1 className="text-2xl font-bold">Order History</h1>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
