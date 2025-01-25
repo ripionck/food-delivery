@@ -2,10 +2,12 @@ import { useState } from "react";
 import ProfileSection from "./dashboard/ProfileSection";
 import Navigation from "./dashboard/Navigation";
 import StatsCard from "./dashboard/StatsCard";
-import RecentOrderItem from "./dashboard/RecentOrderItem";
 import { ShoppingBag, Star, MapPin } from "lucide-react";
 import OrderHistory from "./OrderHistory";
-import SavedItems from "../../Saveditems";
+import SavedItems from "./SavedItems";
+import Support from "./Support";
+import Settings from "./Settings";
+import RecentOrders from "./dashboard/RecentOrders";
 
 function UserDashboard() {
   const [selectedContent, setSelectedContent] = useState("dashboard");
@@ -39,29 +41,7 @@ function UserDashboard() {
               />
             </div>
             <div className="bg-white rounded-xl shadow-sm p-6">
-              <h2 className="text-xl font-semibold mb-6">Recent Orders</h2>
-              <div className="space-y-4">
-                <RecentOrderItem
-                  restaurant="Italian Restaurant"
-                  items={2}
-                  total="42.50"
-                  status={{
-                    label: "Delivered",
-                    bgColor: "bg-green-50",
-                    textColor: "text-green-600",
-                  }}
-                />
-                <RecentOrderItem
-                  restaurant="Burger House"
-                  items={3}
-                  total="35.80"
-                  status={{
-                    label: "In Progress",
-                    bgColor: "bg-blue-50",
-                    textColor: "text-blue-600",
-                  }}
-                />
-              </div>
+              <RecentOrders />
               <button className="w-full mt-6 text-orange-500 hover:text-orange-600 font-medium">
                 View All Orders
               </button>
@@ -73,9 +53,9 @@ function UserDashboard() {
       case "saved":
         return <SavedItems />;
       case "settings":
-        return <div>Settings Content</div>;
+        return <Settings />;
       case "support":
-        return <div>Support Content</div>;
+        return <Support />;
       default:
         return null;
     }

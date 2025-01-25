@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CuisineFilter from "./CuisineFilter";
 import {
   Pizza,
   IceCreamBowlIcon as Bowl,
@@ -33,33 +34,11 @@ function Cuisines() {
     <section className="max-w-7xl mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">Cuisines</h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {cuisines.slice(0, visibleCuisines).map((cuisine, index) => (
-          <div
-            key={index}
-            className="bg-white p-6 shadow-sm rounded-lg flex flex-col items-center text-center"
-          >
-            <div className="w-16 h-16 bg-gray-100 flex items-center justify-center rounded-full mb-4">
-              <cuisine.icon className="text-orange-500 w-8 h-8" />
-            </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-1">
-              {cuisine.name}
-            </h3>
-            <p className="text-sm text-gray-500">{cuisine.dishes}</p>
-          </div>
-        ))}
-      </div>
-
-      {visibleCuisines < cuisines.length && (
-        <div className="text-center mt-8">
-          <button
-            onClick={loadMoreCuisines}
-            className="px-6 py-3 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition"
-          >
-            Load More Cuisines
-          </button>
-        </div>
-      )}
+      <CuisineFilter
+        cuisines={cuisines}
+        visibleCuisines={visibleCuisines}
+        loadMoreCuisines={loadMoreCuisines}
+      />
     </section>
   );
 }
