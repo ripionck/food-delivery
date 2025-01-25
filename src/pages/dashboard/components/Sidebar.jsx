@@ -8,7 +8,7 @@ import {
   MessageSquare,
 } from "lucide-react";
 
-function Navigation({ onSelect }) {
+function Sidebar({ onSelect }) {
   const [activeLink, setActiveLink] = useState("dashboard");
 
   const handleLinkClick = (link) => {
@@ -30,9 +30,9 @@ function Navigation({ onSelect }) {
         <span>Dashboard</span>
       </button>
       <button
-        onClick={() => handleLinkClick("menuManagement")}
+        onClick={() => handleLinkClick("menu")}
         className={`flex items-center gap-3 px-4 py-3 rounded-lg ${
-          activeLink === "menuManagement"
+          activeLink === "menu"
             ? "text-orange-500 bg-orange-50"
             : "text-gray-700 hover:bg-gray-50"
         }`}
@@ -63,9 +63,9 @@ function Navigation({ onSelect }) {
         <span>Promotions</span>
       </button>
       <button
-        onClick={() => handleLinkClick("customerFeedback")}
+        onClick={() => handleLinkClick("feedback")}
         className={`flex items-center gap-3 px-4 py-3 rounded-lg ${
-          activeLink === "customerFeedback"
+          activeLink === "feedback"
             ? "text-orange-500 bg-orange-50"
             : "text-gray-700 hover:bg-gray-50"
         }`}
@@ -77,8 +77,8 @@ function Navigation({ onSelect }) {
   );
 }
 
-Navigation.propTypes = {
+Sidebar.propTypes = {
   onSelect: PropTypes.func.isRequired,
 };
 
-export default Navigation;
+export default Sidebar;

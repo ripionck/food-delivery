@@ -5,11 +5,11 @@ import Cuisines from "./pages/cuisines/Cuisines";
 import OrderTracking from "./pages/orderTracking/OrderTracking";
 import UserDashboard from "./pages/userDashboard/UserDashboard";
 import Account from "./pages/account/Account";
-import RestaurantDashboard from "./pages/restaurantDashboard/RestaurantDashboard";
 import Cart from "./pages/cart/Cart";
 import OrderConfirmation from "./OrderConfirmation";
 import DeliveryForm from "./DeliveryForm";
 import PaymentForm from "./PaymentForm";
+import RestaurantDashboard from "./pages/dashboard/RestaurantDashboard";
 
 function App() {
   return (
