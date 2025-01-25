@@ -26,21 +26,21 @@ function Header() {
             </span>
           </div>
           <nav className="hidden md:flex space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-gray-900">
+            <Link to="/" className="text-gray-700 hover:text-[#FF642F]">
               Home
             </Link>
             <Link
               to="/restaurants"
-              className="text-gray-700 hover:text-gray-900"
+              className="text-gray-700 hover:text-[#FF642F]"
             >
               Restaurants
             </Link>
-            <Link to="/cuisines" className="text-gray-700 hover:text-gray-900">
+            <Link to="/cuisines" className="text-gray-700 hover:text-[#FF642F]">
               Cuisines
             </Link>
             <Link
               to="/track-order"
-              className="text-gray-700 hover:text-gray-900"
+              className="text-gray-700 hover:text-[#FF642F]"
             >
               Track Order
             </Link>
@@ -55,11 +55,11 @@ function Header() {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
             </div>
             <Link to="/cart">
-              <ShoppingCart className="w-5 h-5 text-gray-700" />
+              <ShoppingCart className="w-6 h-6 text-gray-700 hover:text-orange-600" />
             </Link>
             <div className="relative">
               <button onClick={toggleProfileMenu}>
-                <User className="w-5 h-5 text-gray-700" />
+                <User className="w-6 h-6 text-gray-700 hover:text-orange-600" />
               </button>
               {isProfileOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">

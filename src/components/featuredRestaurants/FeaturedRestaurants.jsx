@@ -1,4 +1,4 @@
-import { Truck } from "lucide-react";
+import { Link } from "react-router-dom";
 import RestaurantCard from "./RestaurantCard";
 
 export default function FeaturedRestaurants() {
@@ -49,13 +49,12 @@ export default function FeaturedRestaurants() {
               Explore our handpicked selection of top-rated restaurants
             </p>
           </div>
-          <a
-            href="#"
+          <Link
+            to="/restaurants"
             className="text-orange-500 hover:text-orange-600 flex items-center"
           >
             View All
-            <Truck className="w-5 h-5 ml-1" />
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

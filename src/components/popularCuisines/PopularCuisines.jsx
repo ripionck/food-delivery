@@ -7,6 +7,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import CuisineCard from "./CuisineCard";
+import { Link } from "react-router-dom";
 
 function PopularCuisines() {
   const cuisines = [
@@ -58,13 +59,13 @@ function PopularCuisines() {
       </div>
 
       <div className="text-center mt-12">
-        <a
-          href="#"
+        <Link
+          to="/cuisines"
           className="inline-flex items-center text-[#FF642F] font-medium hover:underline"
         >
           Explore All Cuisines
           <ArrowRight className="w-4 h-4 ml-1" />
-        </a>
+        </Link>
       </div>
     </section>
   );

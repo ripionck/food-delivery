@@ -1,3 +1,4 @@
+import ATMCard from "../footer/ATMCard";
 import FooterBrand from "../footer/FooterBrand";
 import FooterContact from "../footer/FooterContact";
 import FooterLinks from "../footer/FooterLinks";
@@ -20,6 +21,7 @@ function Footer() {
           <FooterSupport />
           <FooterContact />
         </div>
+        <ATMCard />
       </footer>
     </div>
   );
