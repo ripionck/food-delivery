@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Star, Clock, Truck } from "lucide-react";
+import { Star, Clock, MapPin, Bike } from "lucide-react";
 
 function RestaurantCard({ restaurant }) {
   return (
@@ -28,7 +28,12 @@ function RestaurantCard({ restaurant }) {
             <h3 className="text-xl font-bold text-gray-900">
               {restaurant.name}
             </h3>
-            <p className="text-gray-500 mt-1">{restaurant.address}</p>
+            <p className="text-gray-500 mt-1">
+              <span className="flex items-center">
+                <MapPin className="w-4 h-4 mr-1 text-orange-400" />
+                {restaurant.address}
+              </span>
+            </p>
           </div>
           <span className="text-green-600 text-sm font-medium">
             {restaurant.status}
@@ -36,11 +41,11 @@ function RestaurantCard({ restaurant }) {
         </div>
         <div className="flex items-center justify-between text-sm text-gray-500">
           <div className="flex items-center">
-            <Clock className="w-4 h-4 mr-1" />
+            <Clock className="w-4 h-4 mr-1 text-orange-400" />
             {restaurant.deliveryTime}
           </div>
           <div className="flex items-center">
-            <Truck className="w-4 h-4 mr-1" />
+            <Bike className="w-4 h-4 mr-1 text-orange-400" />
             {restaurant.deliveryFee}
           </div>
         </div>

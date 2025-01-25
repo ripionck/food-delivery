@@ -11,6 +11,7 @@ import DeliveryForm from "./pages/deliveryForm/DeliveryForm";
 import PaymentForm from "./pages/paymentForm/PaymentForm";
 import OrderConfirmation from "./pages/orderConfirmation/OrderConfirmation";
 import Layout from "./components/layouts/Layout";
+import RestaurantMenu from "./pages/restaurantMenu/RestaurantMenu";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/restaurants" element={<Restaurants />} />
+          <Route path="/menu" element={<RestaurantMenu />} />
           <Route path="/cuisines" element={<Cuisines />} />
           <Route path="/track-order" element={<OrderTracking />} />
           <Route path="/cart" element={<Cart />} />

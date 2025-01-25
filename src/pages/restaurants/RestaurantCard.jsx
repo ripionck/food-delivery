@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
-import { Clock, Truck, Star } from "lucide-react";
+import { Clock, Star, Bike } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function RestaurantCard({ restaurant }) {
   return (
-    <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+    <Link to="/menu" className="bg-white rounded-lg shadow-sm overflow-hidden">
       <div className="bg-gray-200 h-48 flex justify-center items-center relative">
         <img
           src={restaurant.image || "/placeholder.svg"}
@@ -38,7 +39,7 @@ function RestaurantCard({ restaurant }) {
           </span>
         </div>
         <p className="text-gray-600 text-sm mb-3">
-          {restaurant.cuisines.join(" • ")}
+          {restaurant.cuisines?.join(" • ")}
         </p>
         <div className="flex justify-between items-center text-sm text-gray-500">
           <span className="flex items-center">
@@ -46,12 +47,12 @@ function RestaurantCard({ restaurant }) {
             {restaurant.distance}
           </span>
           <span className="flex items-center">
-            <Truck className="w-4 h-4 mr-1.5 text-orange-600" />
+            <Bike className="w-4 h-4 mr-1.5 text-orange-600" />
             {restaurant.deliveryFee}
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -63,7 +64,7 @@ RestaurantCard.propTypes = {
     status: PropTypes.string.isRequired,
     deliveryTime: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
-    cuisines: PropTypes.arrayOf(PropTypes.string).isRequired,
+    cuisines: PropTypes.arrayOf(PropTypes.string),
     distance: PropTypes.string.isRequired,
     deliveryFee: PropTypes.string.isRequired,
   }).isRequired,
