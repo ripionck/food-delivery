@@ -1,6 +1,6 @@
 import { Clock, DollarSign, ShoppingBag, Star } from "lucide-react";
-import PopularItem from "./components/PopularItem";
-import StatsCard from "./components/StatsCard";
+import PopularItem from "./PopularItem";
+import StatsCard from "./StatsCard";
 
 const recentOrders = [
   {

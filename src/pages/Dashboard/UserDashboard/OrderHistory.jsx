@@ -1,6 +1,6 @@
-import OrderItem from "./history/OrderItem";
-import Pagination from "./history/Pagination";
-import SearchBar from "./history/SearchBar";
+import SearchBar from "./SearchBar";
+import OrderItem from "./OrderItem";
+import Pagination from "./Pagination";
 
 function OrderHistory() {
   return (

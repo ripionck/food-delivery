@@ -1,7 +1,7 @@
 import { useState } from "react";
 import DeliveryAddressForm from "./DeliveryAddressForm";
 import OrderSummary from "./OrderSummary";
-import ProgressBar from "../../components/progressBar/ProgressBar";
+import ProgressBar from "../../components/Shared/ProgressBar";
 
 function DeliveryForm() {
   const [deliveryTime, setDeliveryTime] = useState("now");

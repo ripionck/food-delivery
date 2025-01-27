@@ -1,5 +1,5 @@
 import Rewards from "./Rewards";
-import ProgressBar from "../../components/progressBar/ProgressBar";
+import ProgressBar from "../../components/Shared/ProgressBar";
 import OrderDetails from "./OrderDetails";
 
 export default function OrderConfirmation() {

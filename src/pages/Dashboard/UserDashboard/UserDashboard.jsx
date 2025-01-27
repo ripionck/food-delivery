@@ -1,13 +1,13 @@
 import { useState } from "react";
-import ProfileSection from "./dashboard/ProfileSection";
-import Navigation from "./dashboard/Navigation";
-import StatsCard from "./dashboard/StatsCard";
 import { ShoppingBag, Star, MapPin } from "lucide-react";
+import StatsCard from "./StatsCard";
+import RecentOrders from "./RecentOrders";
 import OrderHistory from "./OrderHistory";
 import SavedItems from "./SavedItems";
-import Support from "./Support";
 import Settings from "./Settings";
-import RecentOrders from "./dashboard/RecentOrders";
+import Support from "./Support";
+import ProfileSection from "./ProfileSection";
+import Navigation from "./Navigation";
 
 function UserDashboard() {
   const [selectedContent, setSelectedContent] = useState("dashboard");

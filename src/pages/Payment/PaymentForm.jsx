@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProgressBar from "../../components/progressBar/ProgressBar";
+import ProgressBar from "../../components/Shared/ProgressBar";
 import PaymentMethods from "./PaymentMethods";
 import CardDetails from "./CardDetails";
 import TwoFactorAuthentication from "./TwoFactorAuthentication";

@@ -2,10 +2,10 @@ import { useState } from "react";
 import Menu from "./Menu";
 import Promotions from "./Promotions";
 import Feedback from "./Feedback";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./Sidebar";
 import Orders from "./Orders";
-import Dashboard from "./Dashboard";
-import RestaurantProfile from "./components/RestaurantProfile";
+import Dashboard from "./DashboardOverview";
+import RestaurantProfile from "./RestaurantProfile";
 
 function RestaurantDashboard() {
   const [selectedSection, setSelectedSection] = useState("dashboard");

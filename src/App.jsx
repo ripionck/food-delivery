@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Restaurants from "./pages/restaurants/Restaurants";
-import Cuisines from "./pages/cuisines/Cuisines";
-import OrderTracking from "./pages/orderTracking/OrderTracking";
-import UserDashboard from "./pages/userDashboard/UserDashboard";
-import Account from "./pages/account/Account";
-import Cart from "./pages/cart/Cart";
-import RestaurantDashboard from "./pages/dashboard/RestaurantDashboard";
-import DeliveryForm from "./pages/deliveryForm/DeliveryForm";
-import PaymentForm from "./pages/paymentForm/PaymentForm";
-import OrderConfirmation from "./pages/orderConfirmation/OrderConfirmation";
-import Layout from "./components/layouts/Layout";
-import RestaurantMenu from "./pages/restaurantMenu/RestaurantMenu";
+import Layout from "./components/Common/Layout/Layout";
+import Restaurants from "./pages/Restaurants/Restaurants";
+import RestaurantMenu from "./pages/RestaurantMenu/RestaurantMenu";
+import Cuisines from "./pages/Cuisines/Cuisines";
+import OrderTracking from "./pages/OrderTracking/OrderTracking";
+import Cart from "./pages/Cart/Cart";
+import DeliveryForm from "./pages/Delivery/DeliveryForm";
+import PaymentForm from "./pages/Payment/PaymentForm";
+import OrderConfirmation from "./pages/OrderConfirmation/OrderConfirmation";
+import UserDashboard from "./pages/Dashboard/UserDashboard/UserDashboard";
+import RestaurantDashboard from "./pages/Dashboard/RestaurantDashboard/RestaurantDashboard";
+import Account from "./pages/Account/Account";
 
 function App() {
   return (

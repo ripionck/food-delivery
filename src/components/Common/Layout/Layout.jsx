@@ -1,7 +1,7 @@
-import Footer from "../common/Footer";
-import Header from "../common/Header";
-import Main from "../common/Main";
 import PropTypes from "prop-types";
+import Main from "../Main/Main";
+import Footer from "../Footer/AppFooter";
+import Header from "../Header/AppHeader";
 
 function Layout({ children }) {
   return (

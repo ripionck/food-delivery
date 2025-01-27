@@ -1,8 +1,8 @@
-import FooterBrand from "../footer/FooterBrand";
-import FooterContact from "../footer/FooterContact";
-import FooterLinks from "../footer/FooterLinks";
-import FooterSupport from "../footer/FooterSupport";
-import NewsletterSection from "../footer/NewsletterSection";
+import FooterBrand from "./FooterBrand";
+import FooterLinks from "./FooterLinks";
+import FooterSupport from "./FooterSupport";
+import FooterContact from "./FooterContact";
+import NewsletterSection from "./NewsletterSection";
 
 function Footer() {
   const handleSubmit = (e) => {
