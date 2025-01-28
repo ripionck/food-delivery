@@ -1,11 +1,11 @@
 import { useState } from "react";
 import {
-  Search,
   ShoppingCart,
   User,
   UserCircle,
   LayoutDashboard,
   LogOut,
+  LogIn,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -46,17 +46,10 @@ function Header() {
             </Link>
           </nav>
           <div className="flex items-center space-x-4">
-            <div className="relative">
-              <input
-                type="text"
-                placeholder="Search..."
-                className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500"
-              />
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
-            </div>
             <Link to="/cart">
               <ShoppingCart className="w-6 h-6 text-gray-700 hover:text-orange-600" />
             </Link>
+            <LogIn className="h-6 w-6" />
             <div className="relative">
               <button onClick={toggleProfileMenu}>
                 <User className="w-6 h-6 text-gray-700 hover:text-orange-600" />

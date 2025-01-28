@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import CuisineFilter from "./CuisineFilter";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard from "../../components/Shared/RestaurantCard";
 
 function Restaurants() {
   const [selectedCuisine, setSelectedCuisine] = useState("All Cuisines");

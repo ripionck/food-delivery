@@ -8,7 +8,8 @@
       "deliveryTime": "25-35 mins",
       "minimumOrder": 12.99,
       "image": "https://example.com/pasta-paradise.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "3.2 km"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "deliveryTime": "20-30 mins",
       "minimumOrder": 10.99,
       "image": "https://example.com/taco-fiesta.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "2.5 km"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "deliveryTime": "30-40 mins",
       "minimumOrder": 18.99,
       "image": "https://example.com/sushi-master.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "4.1 km"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "deliveryTime": "35-45 mins",
       "minimumOrder": 15.99,
       "image": "https://example.com/bombay-spice.jpg",
-      "status": "closed"
+      "status": "closed",
+      "distance": "5.0 km"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "deliveryTime": "25-35 mins",
       "minimumOrder": 14.99,
       "image": "https://example.com/olive-grove.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "3.8 km"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "deliveryTime": "20-25 mins",
       "minimumOrder": 15.99,
       "image": "https://example.com/burger-barn.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "2.2 km"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "deliveryTime": "30-40 mins",
       "minimumOrder": 16.99,
       "image": "https://example.com/thai-orchid.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "4.5 km"
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "deliveryTime": "25-35 mins",
       "minimumOrder": 12.99,
       "image": "https://example.com/dragon-wok.jpg",
-      "status": "closed"
+      "status": "closed",
+      "distance": "3.0 km"
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "deliveryTime": "35-45 mins",
       "minimumOrder": 20.99,
       "image": "https://example.com/seoul-kitchen.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "5.2 km"
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "deliveryTime": "20-30 mins",
       "minimumOrder": 13.99,
       "image": "https://example.com/pho-street.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "2.9 km"
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "deliveryTime": "25-35 mins",
       "minimumOrder": 14.99,
       "image": "https://example.com/athens-grill.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "3.7 km"
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "deliveryTime": "30-40 mins",
       "minimumOrder": 16.99,
       "image": "https://example.com/casbah-cafe.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "4.0 km"
     },
     {
       "id": 13,
@@ -128,7 +140,8 @@
       "deliveryTime": "20-25 mins",
       "minimumOrder": 10.99,
       "image": "https://example.com/la-boulangerie.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "2.4 km"
     },
     {
       "id": 14,
@@ -138,7 +151,8 @@
       "deliveryTime": "35-45 mins",
       "minimumOrder": 18.99,
       "image": "https://example.com/tapas-haven.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "4.6 km"
     },
     {
       "id": 15,
@@ -148,7 +162,8 @@
       "deliveryTime": "40-50 mins",
       "minimumOrder": 22.99,
       "image": "https://example.com/carnivale-brasil.jpg",
-      "status": "closed"
+      "status": "closed",
+      "distance": "5.5 km"
     },
     {
       "id": 16,
@@ -158,7 +173,8 @@
       "deliveryTime": "25-35 mins",
       "minimumOrder": 14.99,
       "image": "https://example.com/green-garden.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "3.3 km"
     },
     {
       "id": 17,
@@ -168,7 +184,8 @@
       "deliveryTime": "15-25 mins",
       "minimumOrder": 8.99,
       "image": "https://example.com/sweet-dreams.jpg",
-      "status": "closed"
+      "status": "closed",
+      "distance": "2.1 km"
     },
     {
       "id": 18,
@@ -178,7 +195,8 @@
       "deliveryTime": "20-30 mins",
       "minimumOrder": 16.99,
       "image": "https://example.com/pizza-napoli.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "3.9 km"
     },
     {
       "id": 19,
@@ -188,7 +206,8 @@
       "deliveryTime": "25-35 mins",
       "minimumOrder": 12.99,
       "image": "https://example.com/burrito-bros.jpg",
-      "status": "closed"
+      "status": "closed",
+      "distance": "3.4 km"
     },
     {
       "id": 20,
@@ -198,7 +217,8 @@
       "deliveryTime": "30-40 mins",
       "minimumOrder": 15.99,
       "image": "https://example.com/ramen-house.jpg",
-      "status": "open"
+      "status": "open",
+      "distance": "4.2 km"
     }
   ]
 }

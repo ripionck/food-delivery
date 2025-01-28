@@ -1,33 +1,51 @@
-import { LayoutGrid, List, Star, Clock, Bike } from "lucide-react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { LayoutGrid, List, Search } from "lucide-react";
+import RestaurantCard from "../Shared/RestaurantCard";
 
-function RestaurantList({ viewMode, setViewMode, restaurants }) {
+function RestaurantList({
+  viewMode,
+  setViewMode,
+  restaurants,
+  searchQuery,
+  setSearchQuery,
+}) {
   return (
-    <Link to="/menu" className="flex-1">
+    <div className="flex-1">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-semibold">Popular Near You</h1>
-        <div className="flex gap-2">
-          <button
-            onClick={() => setViewMode("grid")}
-            className={`p-2 rounded ${
-              viewMode === "grid"
-                ? "bg-orange-50 text-orange-500"
-                : "text-gray-500"
-            }`}
-          >
-            <LayoutGrid className="h-4 w-4" />
-          </button>
-          <button
-            onClick={() => setViewMode("list")}
-            className={`p-2 rounded ${
-              viewMode === "list"
-                ? "bg-orange-50 text-orange-500"
-                : "text-gray-500"
-            }`}
-          >
-            <List className="h-4 w-4" />
-          </button>
+        <div className="flex gap-4">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-8 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500"
+            />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+          </div>
+          <div className="flex gap-2">
+            <button
+              onClick={() => setViewMode("grid")}
+              className={`p-2 rounded ${
+                viewMode === "grid"
+                  ? "bg-orange-50 text-orange-500"
+                  : "text-gray-500"
+              }`}
+            >
+              <LayoutGrid className="h-5 w-5" />
+            </button>
+            <button
+              onClick={() => setViewMode("list")}
+              className={`p-2 rounded ${
+                viewMode === "list"
+                  ? "bg-orange-50 text-orange-500"
+                  : "text-gray-500"
+              }`}
+            >
+              <List className="h-5 w-5" />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -38,60 +56,28 @@ function RestaurantList({ viewMode, setViewMode, restaurants }) {
             : "grid-cols-1"
         }`}
       >
-        {restaurants.map((restaurant) => (
+        {restaurants.slice(0, 6).map((restaurant) => (
           <div
             key={restaurant.id}
-            className="bg-white p-4 rounded-lg shadow-sm"
+            className="bg-white rounded-lg shadow-sm hover:shadow-2xl"
           >
-            <div className="bg-gray-200 h-48 flex justify-center items-center relative">
-              <img
-                src={restaurant.image || "/placeholder.svg"}
-                alt={restaurant.name}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute top-4 left-4">
-                <span
-                  className={`px-3 py-1 rounded-full text-sm font-medium ${
-                    restaurant.status === "Open"
-                      ? "bg-green-500 text-white"
-                      : "bg-red-500 text-white"
-                  }`}
-                >
-                  {restaurant.status}
-                </span>
-              </div>
-              <div className="absolute bottom-4 right-4">
-                <span className="px-3 py-1 rounded-full bg-white text-sm text-gray-700">
-                  {restaurant.deliveryTime}
-                </span>
-              </div>
-            </div>
-            <div className="p-4">
-              <div className="flex justify-between items-center mb-2">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  {restaurant.name}
-                </h3>
-                <span className="bg-green-100 text-green-600 px-2 py-1 rounded-full text-sm font-medium flex items-center">
-                  {restaurant.rating}
-                  <Star className="w-4 h-4 ml-1" />
-                </span>
-              </div>
-
-              <div className="flex justify-between items-center text-sm text-gray-500">
-                <span className="flex items-center">
-                  <Clock className="w-4 h-4 mr-1.5 text-orange-600" />
-                  {restaurant.distance}
-                </span>
-                <span className="flex items-center">
-                  <Bike className="w-4 h-4 mr-1.5 text-orange-600" />
-                  {restaurant.deliveryFee}
-                </span>
-              </div>
-            </div>
+            <RestaurantCard
+              key={restaurant.id}
+              restaurant={{
+                ...restaurant,
+                image: restaurant?.image || "/placeholder-food.jpg",
+                status: restaurant?.status === "open" ? "Open" : "Closed",
+                deliveryTime: restaurant?.deliveryTime || "30-45 min",
+                rating: restaurant?.rating || 4.0,
+                cuisines: restaurant.cuisines,
+                distance: `${Math.floor(Math.random() * 5) + 1} km away`,
+                deliveryFee: `$${Math.floor(Math.random() * 6) + 3} delivery`,
+              }}
+            />
           </div>
         ))}
       </div>
-    </Link>
+    </div>
   );
 }
 
@@ -108,9 +94,11 @@ RestaurantList.propTypes = {
       rating: PropTypes.number.isRequired,
       status: PropTypes.string.isRequired,
       distance: PropTypes.string.isRequired,
-      deliveryFee: PropTypes.string.isRequired,
+      deliveryFee: PropTypes.string,
     }),
   ).isRequired,
+  searchQuery: PropTypes.string.isRequired,
+  setSearchQuery: PropTypes.func.isRequired,
 };
 
 export default RestaurantList;

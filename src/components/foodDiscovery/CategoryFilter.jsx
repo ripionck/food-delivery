@@ -10,7 +10,7 @@ const categories = [
 
 function CategoryFilter({ activeCategory, setActiveCategory }) {
   return (
-    <div className="flex justify-center gap-8 p-4 bg-white shadow-sm">
+    <div className="container mx-auto flex justify-center gap-8 p-2 bg-white border-b border-gray-200">
       {categories.map((category) => (
         <button
           key={category.id}
