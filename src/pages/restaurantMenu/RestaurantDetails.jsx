@@ -10,15 +10,10 @@ export default function RestaurantDetails() {
             Homepage
           </a>
           <ChevronRight className="w-4 h-4 text-gray-400" />
-          <a href="/dhaka" className="text-gray-600 hover:text-gray-900">
-            Dhaka
-          </a>
-          <ChevronRight className="w-4 h-4 text-gray-400" />
           <span className="text-gray-900">House of Shen</span>
         </nav>
 
         <div className="flex gap-6">
-          {/* Restaurant Image */}
           <div className="w-40 h-40 rounded-lg overflow-hidden">
             <img
               src="https://shorturl.at/W3ceI"
@@ -26,9 +21,7 @@ export default function RestaurantDetails() {
             />
           </div>
 
-          {/* Restaurant Info */}
           <div className="flex-1">
-            {/* Cuisine Types */}
             <div className="flex gap-2 text-sm text-gray-600 mb-2">
               <span>Chinese</span>
               <span>•</span>
@@ -41,10 +34,8 @@ export default function RestaurantDetails() {
               <span>Meat</span>
             </div>
 
-            {/* Restaurant Name */}
             <h1 className="text-3xl font-bold mb-4">House of Shen</h1>
 
-            {/* Delivery Info */}
             <div className="flex items-center gap-4 mb-4">
               <div className="flex items-center gap-2">
                 <span className="text-pink-500">
@@ -59,7 +50,6 @@ export default function RestaurantDetails() {
               </div>
             </div>
 
-            {/* Rating and Reviews */}
             <div className="flex items-center gap-6 mb-8">
               <div className="flex items-center gap-1">
                 <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />

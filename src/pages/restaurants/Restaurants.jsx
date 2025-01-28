@@ -1,77 +1,83 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CuisineFilter from "./CuisineFilter";
 import RestaurantCard from "./RestaurantCard";
 
 function Restaurants() {
   const [selectedCuisine, setSelectedCuisine] = useState("All Cuisines");
+  const [restaurantsData, setRestaurantsData] = useState([]);
+  const [cuisineOptions, setCuisineOptions] = useState(["All Cuisines"]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const cuisines = [
-    "All Cuisines",
-    "Italian",
-    "Chinese",
-    "Indian",
-    "Mexican",
-    "Japanese",
-  ];
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/restaurants.json");
+        if (!response.ok) throw new Error("Failed to fetch data");
 
-  const restaurants = [
-    {
-      id: 1,
-      name: "Italian Delight",
-      image: "https://shorturl.at/W3ceI",
-      status: "Open",
-      deliveryTime: "25-35 min",
-      rating: 4.5,
-      cuisines: ["Italian", "Pizza", "Pasta"],
-      distance: "1.2 km away",
-      deliveryFee: "$5 delivery",
-    },
-    {
-      id: 2,
-      name: "Sushi Master",
-      image: "https://shorturl.at/lvQMo",
-      status: "Open",
-      deliveryTime: "15-25 min",
-      rating: 4.8,
-      cuisines: ["Japanese", "Sushi", "Asian"],
-      distance: "0.8 km away",
-      deliveryFee: "$3 delivery",
-    },
-    {
-      id: 3,
-      name: "Spice Garden",
-      image: "https://shorturl.at/uNCBO",
-      status: "Closed",
-      deliveryTime: "30-45 min",
-      rating: 4.2,
-      cuisines: ["Indian", "Curry", "Vegetarian"],
-      distance: "2.0 km away",
-      deliveryFee: "$4 delivery",
-    },
-  ];
+        const data = await response.json();
+
+        // Ensure data exists before setting state
+        const restaurants = data?.restaurants || [];
+
+        // Extract unique cuisines from all restaurants
+        const uniqueCuisines = [
+          ...new Set(
+            restaurants.flatMap((restaurant) => restaurant.cuisines || []),
+          ),
+        ];
+
+        setCuisineOptions(["All Cuisines", ...uniqueCuisines]);
+        setRestaurantsData(restaurants);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const filteredRestaurants =
     selectedCuisine === "All Cuisines"
-      ? restaurants
-      : restaurants.filter((restaurant) =>
+      ? restaurantsData
+      : restaurantsData.filter((restaurant) =>
           restaurant.cuisines.includes(selectedCuisine),
         );
 
+  if (loading)
+    return <div className="text-center py-8">Loading restaurants...</div>;
+  if (error)
+    return <div className="text-center py-8 text-red-500">Error: {error}</div>;
+
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12">
+    <section className="max-w-7xl mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold text-gray-900 mb-8">
         Popular Restaurants
       </h2>
 
       <CuisineFilter
-        cuisines={cuisines}
+        cuisines={cuisineOptions}
         selectedCuisine={selectedCuisine}
         setSelectedCuisine={setSelectedCuisine}
       />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredRestaurants.map((restaurant) => (
-          <RestaurantCard key={restaurant.id} restaurant={restaurant} />
+        {filteredRestaurants?.map((restaurant) => (
+          <RestaurantCard
+            key={restaurant.id}
+            restaurant={{
+              ...restaurant,
+              image: restaurant?.image || "/placeholder-food.jpg",
+              status: restaurant?.status === "open" ? "Open" : "Closed",
+              deliveryTime: restaurant?.deliveryTime || "30-45 min",
+              rating: restaurant?.rating || 4.0,
+              cuisines: restaurant.cuisines,
+              distance: `${Math.floor(Math.random() * 5) + 1} km away`,
+              deliveryFee: `$${Math.floor(Math.random() * 6) + 3} delivery`,
+            }}
+          />
         ))}
       </div>
 

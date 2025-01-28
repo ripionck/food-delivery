@@ -1,0 +1,123 @@
+{
+  "cuisines": [
+    {
+      "id": 1,
+      "name": "Italian",
+      "description": "Fresh pasta, wood-fired pizzas, and rich sauces",
+      "dishes": "150+ dishes",
+      "icon": "Pizza"
+    },
+    {
+      "id": 2,
+      "name": "Mexican",
+      "description": "Tacos, burritos, and bold flavors",
+      "dishes": "120+ dishes",
+      "icon": "ChiliHot"
+    },
+    {
+      "id": 3,
+      "name": "Japanese",
+      "description": "Sushi, ramen, and tempura",
+      "dishes": "130+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 4,
+      "name": "Indian",
+      "description": "Curries, biryanis, and tandoori dishes",
+      "dishes": "160+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 5,
+      "name": "Mediterranean",
+      "description": "Hummus, kebabs, and fresh salads",
+      "dishes": "90+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 6,
+      "name": "American",
+      "description": "Burgers, fries, and comfort food",
+      "dishes": "180+ dishes",
+      "icon": "Burger"
+    },
+    {
+      "id": 7,
+      "name": "Thai",
+      "description": "Spicy curries and stir-fried noodles",
+      "dishes": "80+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 8,
+      "name": "Chinese",
+      "description": "Dim sum, noodles, and Sichuan specialties",
+      "dishes": "140+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 9,
+      "name": "Korean",
+      "description": "BBQ, bibimbap, and kimchi",
+      "dishes": "100+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 10,
+      "name": "Vietnamese",
+      "description": "Pho, banh mi, and fresh spring rolls",
+      "dishes": "100+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 11,
+      "name": "Greek",
+      "description": "Gyros, souvlaki, and moussaka",
+      "dishes": "100+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 12,
+      "name": "Middle Eastern",
+      "description": "Shawarma, falafel, and mezze",
+      "dishes": "100+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 13,
+      "name": "French",
+      "description": "Croissants, coq au vin, and ratatouille",
+      "dishes": "110+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 14,
+      "name": "Spanish",
+      "description": "Paella, tapas, and churros",
+      "dishes": "100+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 15,
+      "name": "Brazilian",
+      "description": "Feijoada, grilled meats, and pão de queijo",
+      "dishes": "100+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 16,
+      "name": "Vegetarian",
+      "description": "Plant-based dishes",
+      "dishes": "100+ dishes",
+      "icon": "Bowl"
+    },
+    {
+      "id": 17,
+      "name": "Desserts",
+      "description": "Cakes, ice creams, and pastries",
+      "dishes": "100+ dishes",
+      "icon": "Cookie"
+    }
+  ]
+}

@@ -14,7 +14,7 @@ function CuisineFilter({ cuisines, visibleCuisines, loadMoreCuisines }) {
         <div className="text-center mt-8">
           <button
             onClick={loadMoreCuisines}
-            className="px-6 py-3 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition"
+            className="px-6 py-3 bg-orange-500 text-white font-medium rounded-full hover:bg-orange-600 transition"
           >
             Load More Cuisines
           </button>

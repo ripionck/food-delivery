@@ -1,0 +1,558 @@
+{
+  "menus": {
+    "1": [
+      {
+        "id": 101,
+        "name": "Truffle Mushroom Risotto",
+        "description": "Creamy Arborio rice with wild mushrooms",
+        "price": 18.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 102,
+        "name": "Margherita Pizza",
+        "description": "San Marzano tomatoes, fresh basil, mozzarella",
+        "price": 14.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 103,
+        "name": "Lobster Ravioli",
+        "description": "Homemade pasta with lobster filling",
+        "price": 22.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 104,
+        "name": "Tiramisu",
+        "description": "Classic coffee-flavored dessert",
+        "price": 8.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Dessert"
+      }
+    ],
+    "2": [
+      {
+        "id": 201,
+        "name": "Carne Asada Tacos",
+        "description": "Grilled steak, cilantro, onions, salsa verde",
+        "price": 12.99,
+        "isVegetarian": false,
+        "isSpicy": true,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 202,
+        "name": "Vegetarian Quesadilla",
+        "description": "Melted cheese, peppers, mushrooms",
+        "price": 10.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Appetizer"
+      },
+      {
+        "id": 203,
+        "name": "Churros",
+        "description": "Cinnamon sugar pastry with chocolate dip",
+        "price": 6.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Dessert"
+      }
+    ],
+    "3": [
+      {
+        "id": 301,
+        "name": "Dragon Roll",
+        "description": "Eel, avocado, cucumber, eel sauce",
+        "price": 16.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 302,
+        "name": "Miso Ramen",
+        "description": "Pork broth, chashu, bamboo shoots",
+        "price": 14.99,
+        "isVegetarian": false,
+        "isSpicy": true,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      }
+    ],
+    "4": [
+      {
+        "id": 401,
+        "name": "Butter Chicken",
+        "description": "Tandoori chicken in creamy tomato sauce",
+        "price": 15.99,
+        "isVegetarian": false,
+        "isSpicy": true,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 402,
+        "name": "Vegetable Biryani",
+        "description": "Fragrant basmati rice with mixed veggies",
+        "price": 12.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      }
+    ],
+    "5": [
+      {
+        "id": 501,
+        "name": "Lamb Kebabs",
+        "description": "Grilled marinated lamb with tzatziki",
+        "price": 18.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 502,
+        "name": "Falafel Plate",
+        "description": "Crispy falafel with hummus and pita",
+        "price": 14.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Appetizer"
+      }
+    ],
+    "6": [
+      {
+        "id": 601,
+        "name": "Double Cheeseburger",
+        "description": "Two beef patties, cheddar, special sauce",
+        "price": 13.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 602,
+        "name": "Truffle Parmesan Fries",
+        "description": "Crispy fries with truffle oil",
+        "price": 7.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Side Dish"
+      }
+    ],
+    "7": [
+      {
+        "id": 701,
+        "name": "Green Curry",
+        "description": "Chicken in coconut green curry",
+        "price": 16.99,
+        "isVegetarian": false,
+        "isSpicy": true,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 702,
+        "name": "Pad Thai",
+        "description": "Stir-fried rice noodles with shrimp",
+        "price": 14.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      }
+    ],
+    "8": [
+      {
+        "id": 801,
+        "name": "Peking Duck",
+        "description": "Crispy duck with pancakes",
+        "price": 24.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 802,
+        "name": "Kung Pao Chicken",
+        "description": "Spicy stir-fry with peanuts",
+        "price": 15.99,
+        "isVegetarian": false,
+        "isSpicy": true,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      }
+    ],
+    "9": [
+      {
+        "id": 901,
+        "name": "Beef Bulgogi",
+        "description": "Marinated grilled beef",
+        "price": 19.99,
+        "isVegetarian": false,
+        "isSpicy": true,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 902,
+        "name": "Kimchi Fried Rice",
+        "description": "Fried rice with fermented cabbage",
+        "price": 12.99,
+        "isVegetarian": true,
+        "isSpicy": true,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      }
+    ],
+    "10": [
+      {
+        "id": 1001,
+        "name": "Pho Bo",
+        "description": "Beef noodle soup",
+        "price": 13.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 1002,
+        "name": "Banh Mi",
+        "description": "Vietnamese sandwich with pickled veggies",
+        "price": 9.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      }
+    ],
+    "11": [
+      {
+        "id": 1101,
+        "name": "Souvlaki Platter",
+        "description": "Grilled pork skewers with pita",
+        "price": 16.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 1102,
+        "name": "Greek Salad",
+        "description": "Tomatoes, cucumbers, olives, feta",
+        "price": 12.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Appetizer"
+      }
+    ],
+    "12": [
+      {
+        "id": 1201,
+        "name": "Chicken Shawarma",
+        "description": "Marinated chicken with garlic sauce",
+        "price": 14.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 1202,
+        "name": "Falafel Wrap",
+        "description": "Crispy falafel in flatbread",
+        "price": 11.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      }
+    ],
+    "13": [
+      {
+        "id": 1301,
+        "name": "Croissant",
+        "description": "Buttery French pastry",
+        "price": 4.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Breakfast"
+      },
+      {
+        "id": 1302,
+        "name": "Coq au Vin",
+        "description": "Chicken braised in red wine",
+        "price": 21.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      }
+    ],
+    "14": [
+      {
+        "id": 1401,
+        "name": "Seafood Paella",
+        "description": "Saffron rice with shrimp and mussels",
+        "price": 22.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 1402,
+        "name": "Churros con Chocolate",
+        "description": "Fried dough with chocolate dip",
+        "price": 7.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Dessert"
+      }
+    ],
+    "15": [
+      {
+        "id": 1501,
+        "name": "Feijoada",
+        "description": "Black bean stew with pork",
+        "price": 18.99,
+        "isVegetarian": false,
+        "isSpicy": true,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 1502,
+        "name": "Grilled Pineapple",
+        "description": "Caramelized pineapple dessert",
+        "price": 6.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Dessert"
+      }
+    ],
+    "16": [
+      {
+        "id": 1601,
+        "name": "Quinoa Bowl",
+        "description": "Superfood grains with roasted veggies",
+        "price": 14.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 1602,
+        "name": "Vegan Burger",
+        "description": "Plant-based patty with avocado",
+        "price": 13.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      }
+    ],
+    "17": [
+      {
+        "id": 1701,
+        "name": "Chocolate Lava Cake",
+        "description": "Warm chocolate cake with molten center",
+        "price": 8.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Dessert"
+      },
+      {
+        "id": 1702,
+        "name": "Matcha Ice Cream",
+        "description": "Green tea flavored ice cream",
+        "price": 5.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Dessert"
+      }
+    ],
+    "18": [
+      {
+        "id": 1801,
+        "name": "Quattro Formaggi Pizza",
+        "description": "Four-cheese pizza",
+        "price": 17.99,
+        "isVegetarian": true,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 1802,
+        "name": "Prosciutto e Funghi",
+        "description": "Ham and mushroom pizza",
+        "price": 19.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      }
+    ],
+    "19": [
+      {
+        "id": 1901,
+        "name": "Breakfast Burrito",
+        "description": "Egg, bacon, cheese, potatoes",
+        "price": 11.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Breakfast"
+      },
+      {
+        "id": 1902,
+        "name": "Chicken Tinga Tacos",
+        "description": "Chipotle-marinated chicken",
+        "price": 13.99,
+        "isVegetarian": false,
+        "isSpicy": true,
+        "isPopular": false,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      }
+    ],
+    "20": [
+      {
+        "id": 2001,
+        "name": "Tonkotsu Ramen",
+        "description": "Pork bone broth with noodles",
+        "price": 16.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Main Course"
+      },
+      {
+        "id": 2002,
+        "name": "Gyoza",
+        "description": "Pan-fried pork dumplings",
+        "price": 8.99,
+        "isVegetarian": false,
+        "isSpicy": false,
+        "isPopular": true,
+        "cover": "https://shorturl.at/B0FC0",
+        "category": "Appetizer"
+      }
+    ]
+  }
+}

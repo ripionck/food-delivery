@@ -1,0 +1,204 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Pasta Paradise",
+      "cuisines": ["Italian", "Mediterranean"],
+      "rating": 4.7,
+      "deliveryTime": "25-35 mins",
+      "minimumOrder": 12.99,
+      "image": "https://example.com/pasta-paradise.jpg",
+      "status": "open"
+    },
+    {
+      "id": 2,
+      "name": "Taco Fiesta",
+      "cuisines": ["Mexican", "Latin"],
+      "rating": 4.5,
+      "deliveryTime": "20-30 mins",
+      "minimumOrder": 10.99,
+      "image": "https://example.com/taco-fiesta.jpg",
+      "status": "open"
+    },
+    {
+      "id": 3,
+      "name": "Sushi Master",
+      "cuisines": ["Japanese", "Asian"],
+      "rating": 4.8,
+      "deliveryTime": "30-40 mins",
+      "minimumOrder": 18.99,
+      "image": "https://example.com/sushi-master.jpg",
+      "status": "open"
+    },
+    {
+      "id": 4,
+      "name": "Bombay Spice",
+      "cuisines": ["Indian", "Vegetarian"],
+      "rating": 4.6,
+      "deliveryTime": "35-45 mins",
+      "minimumOrder": 15.99,
+      "image": "https://example.com/bombay-spice.jpg",
+      "status": "closed"
+    },
+    {
+      "id": 5,
+      "name": "Olive Grove",
+      "cuisines": ["Mediterranean", "Greek"],
+      "rating": 4.4,
+      "deliveryTime": "25-35 mins",
+      "minimumOrder": 14.99,
+      "image": "https://example.com/olive-grove.jpg",
+      "status": "open"
+    },
+    {
+      "id": 6,
+      "name": "Burger Barn",
+      "cuisines": ["American", "Fast Food"],
+      "rating": 4.8,
+      "deliveryTime": "20-25 mins",
+      "minimumOrder": 15.99,
+      "image": "https://example.com/burger-barn.jpg",
+      "status": "open"
+    },
+    {
+      "id": 7,
+      "name": "Thai Orchid",
+      "cuisines": ["Thai", "Asian"],
+      "rating": 4.7,
+      "deliveryTime": "30-40 mins",
+      "minimumOrder": 16.99,
+      "image": "https://example.com/thai-orchid.jpg",
+      "status": "open"
+    },
+    {
+      "id": 8,
+      "name": "Dragon Wok",
+      "cuisines": ["Chinese", "Asian"],
+      "rating": 4.3,
+      "deliveryTime": "25-35 mins",
+      "minimumOrder": 12.99,
+      "image": "https://example.com/dragon-wok.jpg",
+      "status": "closed"
+    },
+    {
+      "id": 9,
+      "name": "Seoul Kitchen",
+      "cuisines": ["Korean", "Asian"],
+      "rating": 4.9,
+      "deliveryTime": "35-45 mins",
+      "minimumOrder": 20.99,
+      "image": "https://example.com/seoul-kitchen.jpg",
+      "status": "open"
+    },
+    {
+      "id": 10,
+      "name": "Pho Street",
+      "cuisines": ["Vietnamese", "Asian"],
+      "rating": 4.6,
+      "deliveryTime": "20-30 mins",
+      "minimumOrder": 13.99,
+      "image": "https://example.com/pho-street.jpg",
+      "status": "open"
+    },
+    {
+      "id": 11,
+      "name": "Athens Grill",
+      "cuisines": ["Greek", "Mediterranean"],
+      "rating": 4.5,
+      "deliveryTime": "25-35 mins",
+      "minimumOrder": 14.99,
+      "image": "https://example.com/athens-grill.jpg",
+      "status": "open"
+    },
+    {
+      "id": 12,
+      "name": "Casbah Cafe",
+      "cuisines": ["Middle Eastern", "Mediterranean"],
+      "rating": 4.7,
+      "deliveryTime": "30-40 mins",
+      "minimumOrder": 16.99,
+      "image": "https://example.com/casbah-cafe.jpg",
+      "status": "open"
+    },
+    {
+      "id": 13,
+      "name": "La Boulangerie",
+      "cuisines": ["French", "Bakery"],
+      "rating": 4.8,
+      "deliveryTime": "20-25 mins",
+      "minimumOrder": 10.99,
+      "image": "https://example.com/la-boulangerie.jpg",
+      "status": "open"
+    },
+    {
+      "id": 14,
+      "name": "Tapas Haven",
+      "cuisines": ["Spanish", "Mediterranean"],
+      "rating": 4.4,
+      "deliveryTime": "35-45 mins",
+      "minimumOrder": 18.99,
+      "image": "https://example.com/tapas-haven.jpg",
+      "status": "open"
+    },
+    {
+      "id": 15,
+      "name": "Carnivale Brasil",
+      "cuisines": ["Brazilian", "Latin"],
+      "rating": 4.6,
+      "deliveryTime": "40-50 mins",
+      "minimumOrder": 22.99,
+      "image": "https://example.com/carnivale-brasil.jpg",
+      "status": "closed"
+    },
+    {
+      "id": 16,
+      "name": "Green Garden",
+      "cuisines": ["Vegetarian", "Vegan"],
+      "rating": 4.9,
+      "deliveryTime": "25-35 mins",
+      "minimumOrder": 14.99,
+      "image": "https://example.com/green-garden.jpg",
+      "status": "open"
+    },
+    {
+      "id": 17,
+      "name": "Sweet Dreams",
+      "cuisines": ["Desserts", "Bakery"],
+      "rating": 4.8,
+      "deliveryTime": "15-25 mins",
+      "minimumOrder": 8.99,
+      "image": "https://example.com/sweet-dreams.jpg",
+      "status": "closed"
+    },
+    {
+      "id": 18,
+      "name": "Pizza Napoli",
+      "cuisines": ["Italian", "Pizza"],
+      "rating": 4.7,
+      "deliveryTime": "20-30 mins",
+      "minimumOrder": 16.99,
+      "image": "https://example.com/pizza-napoli.jpg",
+      "status": "open"
+    },
+    {
+      "id": 19,
+      "name": "Burrito Bros",
+      "cuisines": ["Mexican", "Fast Food"],
+      "rating": 4.5,
+      "deliveryTime": "25-35 mins",
+      "minimumOrder": 12.99,
+      "image": "https://example.com/burrito-bros.jpg",
+      "status": "closed"
+    },
+    {
+      "id": 20,
+      "name": "Ramen House",
+      "cuisines": ["Japanese", "Asian"],
+      "rating": 4.8,
+      "deliveryTime": "30-40 mins",
+      "minimumOrder": 15.99,
+      "image": "https://example.com/ramen-house.jpg",
+      "status": "open"
+    }
+  ]
+}
